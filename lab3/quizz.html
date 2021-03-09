@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <style>
+    .field{height: 200px;width: 220px;}
+    .apelido{position: relative; left: -10px;}
+    .nome{position: relative; left: -10px;}
+    .email{position: relative; left: -10px;}
+    .barra{position: relative;; left: -6px;}
+    .imagem{position: relative; width: 45px; height: 30px;top: 5px;left: 10px;}
+    .barra1{position: relative; top: 4px;}
+    select{position: relative; left: 10px; top: 20px;}
+    .masculino{position: relative;  top: -55px; left: 55px;}
+    .feminino{position: relative; top: -35px; right: 24px;}
+    .outro{position: relative; top: -15px; right: 83px;}
+    .genero{position: relative; left: -90px;}   
+  </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Baseball" content="chave">
+        <meta name="Dinheiro" content="chave">
+        <meta name="Festa" content="chave">
+        <meta name="Liberdade" content="chave">
+        <title> New York </title>
+        <link rel="shortcut icon" type="image/x-icon" href="imagens/New-York-Liberty.ico"/>
+    </head>
+    <body style="background-color: lightgray;">
+      <center>
+        <h1>New York</h1>
+        <style>
+            h1 {color: darkgoldenrod;}
+        </style>
+        <img src="imagens/NovaIorque.png" width="530px" height="200px" alt="NewYork">
+        <br>
+        <a href="quizz.html"><b>Quizz</b> |</a>
+        <a href="comentarios.html">Comentários |</a>
+        <a href="../index.html">Home |</a>
+        <a href="index.html">Introdução |</a>
+        <a href="local.html">Localização |</a>
+        <a href="multimedia.html">Multimédia |</a>
+        <a href="info.html">Informação</a>
+        
+
+        
+        <br>
+        <h3>Quizz</h3>
+        <br>
+        <form  method="post" oninput="x.value=parseInt(seis.value)+parseInt(b.value)" id="numform" action="mailto:frederico__11@hotmail.com">
+          <fieldset class="field" >
+            <legend>Dados Pessoais</legend>
+           <label for="fname" class="nome">Nome:</label>
+           <input type="text" id="fname" name="fname" required autofocus><br><br>
+           <label for="lname" class="apelido">Apelido:</label>
+           <input type="text" id="lname" name="lname" class="barra" required autofocus><br><br>
+
+           <p class="genero">Género:</p>
+           <label for="Masculino" class="masculino" style="font-size: small;">Masculino</label>
+           <input type="radio" id="Masculino" name="genero" value="Masculino" style="top: -53px;" class="masculino">
+           <label for="Feminino" class="feminino" style="font-size: small;">Feminino</label>  
+           <input type="radio" id="Feminino" name="genero" value="Feminino" style="top: -33px;" class="feminino">
+           <label for="Outro" class="outro" style="font-size: small;">Outro</label>
+           <input type="radio" id="Outro" name="genero" value="Outro" class="outro" style="top: -13px;">
+
+           <label for="email" class="email">Email:</label>
+           <input type="email" id="email" name="email" autocomplete="on" required ><br><br>
+          </fieldset>
+          <br><br>
+
+          <fieldset>
+            <legend>Questionário 1</legend>
+            <label for="um">1) Em que <b>continente</b> está situado o estado de Nova Iorque?</label>
+            <input type="text" id="um" name="um" placeholder="Resposta" maxlength="16" ><br>
+            <label for="dois">2) Em <b>região</b> fica Nova Iorque?</label>
+            <select name="dois" id="dois" multiple>
+            <option value="centrooeste">Centro Oeste</option>
+            <option value="nordeste">Nordeste</option>
+            <option value="sul">Sul</option>
+            <option value="oeste">Oeste</option>
+          </select>
+          <br><br>
+          </fieldset>
+
+          <br>
+          <fieldset>
+            <legend>Questionário 2</legend>
+            <label for="tres">3) Qual a bandeira do <b>país</b> que pertence o estado de Nova Iorque?</label>
+            <input type="image" id="tres" name="tres" src="imagens/usa.jpg" alt="Enviar" class="imagem">
+            <br>
+            <br>
+            <label for="quatro">4) Dois <b>monumentos ou atrações turística</b> que existam em Nova Iorque?</label>
+            <input type="file" multiple id="quatro" name="quatro">
+          <br><br>
+                
+  
+            <label for="cinco">5) Quais destas <b>celebridades</b> nasceram em Nova Iorque?</label>
+            Jay Z
+            <input type="checkbox" id="cinco" name="cinco" value="JayZ">Elon Musk
+            <input type="checkbox" id="cinco" name="cinco" value="Elon Musk">Beyoncé
+            <input type="checkbox" id="cinco" name="cinco" value="Beyoncé">Donald Trump
+            <input type="checkbox" id="cinco" name="cinco" value="DonaldTrump">Mark Zuckerberg
+            <input type="checkbox" id="cinco" name="cinco" value="MarkZuckerberg"><br><br>
+          
+            
+            <label for="seis">6) Há quanto tempo foi inaugurado o <b>Empire State Building</b>? (entre 0 - 100)</label>
+            <input type="range" id="seis" name="seis" min="0" max="100" value="50" class="barra1">+  <input type="number" id="b" value="25"> = <output name="x" form="numform" for="seis b"></output>
+            
+            <br><br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Questionário 3</legend>
+            <label for="sete">7) Em que ano foi inaugurado <b>Nova Iorque</b>?</label>
+            <input type="number" id="sete" name="sete" step="406" placeholder="0000"><br><br>
+  
+            <label for="day">8) Em que data foi inaugurado a <b>estátua da Liberdade</b>?</label>
+            <input type="date" id="day" name="day" ><br><br>
+
+            <label for="nove">9) Quais são as <b>três cores</b> que aparecem na bandeira dos EUA?</label>
+            <input type="color" id="nove" name="nove" ><input type="color" id="nove" name="nove" ><input type="color" id="nove" name="nove" ><br><br>
+          </fieldset>
+          <input type="submit" value="Submeter">
+          </form>
+         </center>
+
+         
+         <center>
+          <svg width="600" height="289">
+              <g transform="translate(100,100)"> 
+                  <a href="index.html">
+                      <text id="TextElement" x="0" y="0" style="font-family:Palatino;font-size:22; visibility:hidden; color:goldenrod" >Introdução
+                          <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                          <animateMotion path="M 30 300 L 100 89" begin="1s" dur="3s" fill="freeze" />
+                          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0" to="3" additive="sum" begin="1s" dur="3s" fill="freeze" /> 
+                        </text> 
+                  </a>
+                          
+                <a href="multimedia.html">
+                     <text id="TextElement2" x="200" y="2" style="font-family:Palatino;font-size:18; visibility:hidden"> Multimédia
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                      <animateMotion path="M 100 10 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="2s" fill="freeze" /> 
+                      </text> 
+              </a>
+      
+              <a href="local.html">
+                  <text id="TextElement" x="0" y="2" style="font-family:Palatino;font-size:18; visibility:hidden"> Localização
+                   <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                   <animateMotion path="M 30 300 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                   <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                 </text> 
+                 </a>
+      
+              <a href="quizz.html">
+                  <text id="TextElement3" x="140" y="-70" style="font-family:Andale Mono;font-size:18; visibility:hidden"> Quizz
+               <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+               <animateMotion path="M 10 0 L 50 80" begin="1s" dur="3s" fill="freeze" />
+               <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="3s" fill="freeze" /> 
+               </text> 
+           </a>
+                  
+              <a href="info.html">
+                   <text id="TextElement3" x="200" y="-70" style="font-family:OCR A Std;font-size:18; visibility:hidden"> Informação
+                  <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                  <animateMotion path="M 0 0 L 50 100" begin="1s" dur="3s" fill="freeze" />
+                  <animateTransform attributeName="transform" attributeType="XML" type="skewY" from="-100" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                  </text> 
+              </a>
+                  
+              <a href="comentarios.html">
+                     <text id="TextElement3" x="100" y="2" style="font-family:Courier New-B;font-size:18; visibility:hidden" class="asda"> Comentários
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                  <animateMotion path="M 0 0 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                  <animateTransform attributeName="transform" attributeType="XML" type="skewX" from="-50" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                  </text> 
+              </a>
+              </g> 
+            </svg>
+            </center>
+</body>
+</html>
