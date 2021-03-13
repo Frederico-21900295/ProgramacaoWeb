@@ -1,0 +1,69 @@
+body {
+    background-color: lightgray;
+}
+
+.NovaIorque {
+    color: darkgoldenrod;
+    font-size: 30px;
+}
+
+header, nav {
+    text-align: center;
+}
+
+h1::before{
+    background-image: url('imagens/USA.ico');
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: 10px;
+
+}
+
+
+.centrado {
+    text-align: center;
+    color: lightgray;
+}
+
+.outrotipodebr {
+    display: block;
+    visibility: hidden;
+}
+
+
+.centrado {
+    text-align: center;
+    display: block;
+}
+
+figure > img {
+    border: 3px solid grey; 
+}
+
+nav > a:nth-child(2n-1) {
+    color: #696667FF;
+}
+nav > a:nth-child(2n+0) {
+    color: #567572FF;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav > a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+
+.sugestion {
+    position: relative; 
+    top: 8px;
+    width: 550px;
+    resize: none;
+}
