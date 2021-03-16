@@ -76,3 +76,8 @@ nav > a:hover {
     position: fixed;
     top: 300px;
 }
+
+[target="_blank"] {
+    background-color: grey;
+    color: lightgray;
+}
