@@ -55,7 +55,8 @@ nav > a:hover {
 }
 
 section + h3 {
-    color: darkblue;
+    color: darkslateblue;
+    font-size: larger;
 }
 
 
