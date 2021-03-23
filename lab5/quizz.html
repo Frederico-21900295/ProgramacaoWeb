@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Baseball" content="chave">
+        <meta name="Dinheiro" content="chave">
+        <meta name="Festa" content="chave">
+        <meta name="Liberdade" content="chave">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="quizz.css">
+        <link rel="shortcut icon" type="image/x-icon" href="imagens/New-York-Liberty.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> New York </title>
+    </head>
+    <body>
+      <header  style="background-color: white;" class="item1">
+        <h1 class="NovaIorque">New York</h1>
+    <figure style="position: relative;left: -8px;">
+    <img src="imagens/sunsetny - cópia.jpg" alt="NewYork" class="imak">
+    </figure>
+    </header>
+
+    <body>
+
+    <nav class="item2">
+    <div>
+        <br>
+        <ul>
+       <li><a href="index.html"  style="margin-left: 10px;"><span class="material-icons">door_front</span> Introdução</span></a></li> 
+       <li > <a href="local.html" style="margin-left: 10px;"><span class="material-icons">map</span> Localização</a></li> 
+        <li><a href="multimedia.html"  style="margin-left: 10px;"><span class="material-icons">perm_media</span> Multimédia</a></li> 
+        <li> <a href="info.html"  style="margin-left: 10px;"><span class="material-icons">info</span> Informação</a></li> 
+        <li><a href="html5-css.html"  style="margin-left: 10px;"> <span class="material-icons">language</span> HTML5 & CSS</a></li> 
+    </ul>
+</div>
+<div>
+    <ul>
+<li><a href="quizz.html"  style="margin-left: 10px;"><span class="material-icons">quiz</span> <span style="font-weight: bold;">Quizz</span></a></li>
+<li><a href="comentarios.html"  style="margin-left: 10px;"><span class="material-icons">message</span> Comentários</a></li>
+</ul>
+</div>
+<div>
+<ul>
+<li> <a href="../index.html"  style="margin-left: 10px;"><span class="material-icons">home</span> Home</a></li>
+</ul>
+</div>
+</nav>
+<br>
+
+<div class="item3" style="background-color: white;">
+  <br><hr>
+  <section></section>
+          <h3 style="text-align: center; color: grey;font-size: x-large;">Quizz</h3>
+          <br>
+          <form  method="post" oninput="x.value=parseInt(seis.value)+parseInt(b.value)" id="numform" action="mailto:frederico__11@hotmail.com">
+            <fieldset style="height: 200px;width: 220px;margin-left: auto;margin-right: auto; height: 100%;" >
+              <legend>Dados Pessoais</legend>
+             <label for="fname" class="nome">Nome:</label>
+             <input type="text" id="fname" name="fname" required autofocus style="background-color: grey; color: white;"">
+<br><br>
+             <label for="lname" class="apelido">Apelido:</label>
+             <input type="text" id="lname" name="lname" class="barra" required autofocus style="background-color: grey; color: white;"">
+<br><br>
+  
+             <section class="cgenero">
+             <p class="genero">Género:</p>
+             <label for="Masculino"  style="font-size: small; position:relative;top:-53px; left: 70px;">Masculino</label>
+             <input type="radio" class="este" id="Masculino" name="genero" value="Masculino" style="font-size: small; position:relative;top:-52px; left: 67px;">
+             <label for="Feminino"  style="font-size: small; position:relative;top:-23px; left: -10px;">Feminino</label>  
+             <input type="radio" class="este" id="Feminino" name="genero" value="Feminino"  style="font-size: small; position:relative;top:-22px; left: -12px;">
+             <label for="Outro"  style="font-size: small; position:relative;top:-13px; left: 95px;">Outro</label>
+             <input type="radio" class="este" id="Outro" name="genero" value="Outro" style="font-size: small; position:relative;top:-12px; left: 92px;">
+            </section>
+  
+            <section class="hotmail">
+             <label for="email" class="email">Email:</label>
+             <input type="email" id="email" name="email" autocomplete="on" required style="background-color: grey; color: white;"" >
+<br>
+            </section>
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+              <legend>Questionário 1</legend>
+              <label for="um">1) Em que <b>continente</b> está situado o estado de Nova Iorque?</label>
+              <input type="text" id="um" name="um" placeholder="Resposta" maxlength="16" style="background-color: grey; color: white;"" ><br>
+              <label for="dois">2) Em <b>região</b> fica Nova Iorque?</label>
+              <select name="dois" id="dois" multiple>
+              <option value="centrooeste">Centro Oeste</option>
+              <option value="nordeste">Nordeste</option>
+              <option value="sul">Sul</option>
+              <option value="oeste">Oeste</option>
+            </select>
+            <br><br>
+            </fieldset>
+
+            <br>
+          <fieldset >
+            <legend>Questionário 2</legend>
+            <label for="tres" class="segundo">3) Qual a bandeira do <b>país</b> que pertence o estado de Nova Iorque?</label>
+            <input type="image" id="tres" name="tres" src="imagens/usa.jpg" alt="Enviar" class="imagem">
+            <br>
+            <br>
+            <label for="quatro">4) Dois <b>monumentos ou atrações turística</b> que existam em Nova Iorque?</label>
+            <input type="file" multiple id="quatro" name="quatro">
+          <br><br>
+                
+  
+            <label for="cinco">5) Quais destas <b>celebridades</b> nasceram em Nova Iorque?</label>
+            Jay Z
+            <input type="checkbox" id="cinco" name="cinco" value="JayZ">Elon Musk
+            <input type="checkbox" id="cinco" name="cinco" value="Elon Musk">Beyoncé
+            <input type="checkbox" id="cinco" name="cinco" value="Beyoncé">Donald Trump
+            <input type="checkbox" id="cinco" name="cinco" value="DonaldTrump">Mark Zuckerberg
+            <input type="checkbox" id="cinco" name="cinco" value="MarkZuckerberg"><br><br>
+          
+            
+            <label for="seis">6) Há quanto tempo foi inaugurado o <b>Empire State Building</b>?</label>
+            <input type="range" id="seis" name="seis" min="0" max="100" value="50" class="barra1">+  <input type="number" id="b" value="25"> = <output name="x" form="numform" for="seis b"></output>
+            
+            <br><br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Questionário 3</legend>
+            <label for="sete">7) Em que ano foi inaugurado <b>Nova Iorque</b>?</label>
+            <input type="number" id="sete" name="sete" step="406" placeholder="0000" style="background-color: grey; color: white;"><br><br>
+  
+            <label for="day">8) Em que data foi inaugurado a <b>estátua da Liberdade</b>?</label>
+            <input type="date" id="day" name="day" ><br><br>
+
+            <label for="nove">9) Quais são as <b>três cores</b> que aparecem na bandeira dos EUA?</label>
+            <input type="color" id="nove" name="nove" ><input type="color" id="nove" name="nove" ><input type="color" id="nove" name="nove" ><br><br>
+          </fieldset>
+          <br>
+          <center>
+          <input type="submit" value="Submeter">
+        </center>
+            </form>
+            <br><br>
+            <hr>
+          </div>  
+
+          <div class="item4">
+            <aside>
+                <figure class="figuranumero2">
+                <img src="imagens/mayor.jpg" alt="mayor" style="height: 80px; width: 100px;">
+                <figcaption class="legendamayor"><a href="https://en.wikipedia.org/wiki/Bill_de_Blasio" target="_blank">[8]</a></figcaption>
+            </figure>
+            <figure class="figuranumero2">
+                <img src="imagens/mayora.jpg" alt="mayor" style="height: 80px; width: 100px;">
+                <figcaption class="legendamayor"><a href="https://en.wikipedia.org/wiki/Chirlane_McCray" target="_blank">[9]</a></figcaption>
+            </figure>
+            </aside>
+        </div>
+
+        <div class="item10">
+            <aside >
+            <p style="font-size: small;" class="centrar">Apesar da cidade de Nova York ser a cidade mais rica e populosa do estado, a capital do estado é a cidade de Albany, localizada a 234 km de NYC.</p>
+            <p style="font-size: small;" class="centrar">Ao contrário do que muitos imaginam, o Central Park foi todo projetado. As únicas “moradoras” originais do parque são as rochas que encontramos por todos os lados. Todo o resto foi arquitetado e construído em 1857.</p>
+            </aside>
+</div>
+
+          <div style="text-align: center; background-color: white;" class="item11" > 
+            <svg width="600" height="289" class="ssv">
+              <g transform="translate(100,100)"> 
+                  <a href="index.html">
+                      <text id="TextElement" x="0" y="0" style="font-family:Palatino;font-size:22; visibility:hidden; color:goldenrod" >Introdução
+                          <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                          <animateMotion path="M 30 300 L 100 89" begin="1s" dur="3s" fill="freeze" />
+                          <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                          <animateTransform attributeName="transform" attributeType="XML" type="scale" from="0" to="3" additive="sum" begin="1s" dur="3s" fill="freeze" /> 
+                        </text> 
+                  </a>
+  
+                  <a href="../index.html">
+                      <text id="TextElement3" x="90" y="-50" style="font-family:Andale Mono;font-size:18; visibility:hidden"> Home
+                   <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                   <animateMotion path="M 10 0 L 50 80" begin="1s" dur="3s" fill="freeze" />
+                   <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="3s" fill="freeze"/> 
+                   </text> 
+                  </a>
+                          
+                <a href="multimedia.html">
+                     <text id="TextElement2" x="200" y="2" style="font-family:Palatino;font-size:18; visibility:hidden"> Multimédia
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                      <animateMotion path="M 100 10 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                      <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="2s" fill="freeze" /> 
+                      </text> 
+              </a>
+      
+              <a href="local.html">
+                  <text id="TextElement" x="0" y="2" style="font-family:Palatino;font-size:18; visibility:hidden"> Localização
+                   <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                   <animateMotion path="M 30 300 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                   <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-30" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                 </text> 
+                 </a>
+      
+              <a href="quizz.html">
+                  <text id="TextElement3" x="140" y="-70" style="font-family:Andale Mono;font-size:18; visibility:hidden"> Quizz
+               <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+               <animateMotion path="M 10 0 L 50 80" begin="1s" dur="3s" fill="freeze" />
+               <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-50" to="0" begin="1s" dur="3s" fill="freeze" /> 
+               </text> 
+           </a>
+                  
+              <a href="info.html">
+                   <text id="TextElement3" x="200" y="-70" style="font-family:OCR A Std;font-size:18; visibility:hidden"> Informação
+                  <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                  <animateMotion path="M 0 0 L 50 100" begin="1s" dur="3s" fill="freeze" />
+                  <animateTransform attributeName="transform" attributeType="XML" type="skewY" from="-100" to="0" begin="1s" dur="3s" fill="freeze" /> 
+                  </text> 
+              </a>
+                  
+              <a href="comentarios.html">
+                     <text id="TextElement3" x="100" y="2" style="font-family:Courier New-B;font-size:18; visibility:hidden" class="asda"> Comentários
+                      <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+                  <animateMotion path="M 0 0 L 50 110" begin="1s" dur="3s" fill="freeze" />
+                  <animateTransform attributeName="transform" attributeType="XML" type="skewX" from="-50" to="0" begin="1s" dur="5s" fill="freeze" /> 
+                  </text> 
+              </a>
+              <a href="html5-css.html">
+                  <text id="TextElement3" x="130" y="-65" style="font-family:Courier New-B;font-size:12; visibility:hidden" class="asda"> HTML5/CSS
+                   <set attributeName="visibility" attributeType="CSS" to="visible" begin="1s" dur="3s" fill="freeze" />
+               <animateMotion path="M 0 0 L 50 110" begin="1s" dur="3s" fill="freeze" />
+               <animateTransform attributeName="transform" attributeType="XML" type="skewX" from="-50" to="0" begin="1s" dur="3s" fill="freeze" /> 
+               </text> 
+           </a>
+              </g> 
+            </svg>
+            <br><br>
+            </div>
+
+
+            <footer class="item13" style="text-align: center; background-color: white;">
+              <hr>
+              <code>Frederico Azevedo - 21900295</code>
+      </footer>
+  </body>
+  </html>
+  

@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+a {
+  color: darkslateblue;
+}
+
+.NovaIorque {
+  color: darkgoldenrod;
+  font-size: 30px;
+}
+
+h1::before{
+  background-image: url('imagens/USA.ico');
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  content: "";
+  position: relative;
+  top: 10px;
+
+}
+header {
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px){
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;  
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 7vw 7vw;
+    grid-template-areas:
+    'header'
+    'menu1'
+    'main'
+    'main3'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'   '.'
+    '.'
+    '.'  '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'   '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'  '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'   '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'   '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    '.'
+    'main4'
+    'aside'
+    'aside1'
+    'footer';
+  background-color: white;
+     grid-gap: 15px;
+  
+}
+}
+
+
+
+@media screen and (min-width: 601px){
+body {
+  display: grid;
+  grid-template-columns: 330px 2fr 2fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  '. header .'
+  'menu1 main aside'
+  '. main3 aside1'
+  '. main4 .'
+  '. footer .';
+background-color: darkgray;
+padding: 10px;
+}
+}
+
+@media screen and  (max-width: 600px){
+.imak, hr {
+    width: 100%;
+}
+}
+
+@media screen and  (max-width: 600px){
+  table, thead, tbody, th, td, tr{
+    display: block;
+  }
+  }
+
+
+
+
+@media screen and  (max-width: 600px){
+nav {
+    width: 80%;
+}
+}
+
+@media screen and  (max-width: 600px){
+.centrar{
+    width: 40%;
+    margin-left: 20px;
+}
+}
+
+@media screen and  (max-width: 600px){
+.ssv{
+  position: relative;
+  left: -160px;
+  
+}
+}
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu1; }
+.item3 { grid-area: main; }
+.item4 { grid-area: aside; }
+.item6 { grid-area: main1; }
+.item7 { grid-area: aside; }
+.item10 { grid-area: aside1; }
+.item11 { grid-area: main3;}
+.item13 { grid-area: footer;}
+.item14 {grid-area: main4}
+
+
+
+
+
+.caixa1{
+  border: 3px solid grey;
+  width: 200px;
+}
+
+.artigo {
+  width: 730px;
+}
+
+hr {
+
+border: 1px solid black;
+}
+
+li{
+  height: 50px;
+  border: 3px solid grey;
+  background-color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+a:nth-child(2n-1) {
+  color: #696667FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+li:hover{
+  background-color: #E3BC9A;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+figure > img {
+  border: 3px solid grey; 
+}
+
+[target="_blank"] {
+background-color: lightgray;
+  color: grey;
+}
+
+
+.centrar::first-line {
+background-color: darkgray;
+}
+
+
+
+
+div > section > table > caption {
+  font-size: 22px;
+  font-family: fantasy;
+}
+
+main section p:hover, .ver:hover {
+  font-size: large;
+}
+
+th,td {
+  border: 2px solid black; 
+  text-align: center;
+}
+
+
+section > table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabela1 {
+  background-color: #D2beb0;
+}
+
+.tabela2 {
+  background-color: #555548;
+} 
+
+.tabela3 {
+  background-color: #8B5D41;
+}
